@@ -12,7 +12,7 @@ class Algorithm():
 
 	@staticmethod
 	def evolve_population(population_passed):
-		print("Evolving population...")
+	    print("Evolving population...")
 		new_population = Population(population_passed.size(), False)
 
 		if Algorithm.Elitism:
