@@ -4,7 +4,7 @@ from random import random, randint
 
 class Algorithm():
 
-  #Constants
+    #Constants
 	Uniform_rate = 0.5
 	Mutation_rate = 0.015
 	Tournament_size = 5
