@@ -1,5 +1,5 @@
 from random import randint
-from FitnessCalc import FitnessCalc
+from fitnessCalc import FitnessCalc
 
 class Individual():
   

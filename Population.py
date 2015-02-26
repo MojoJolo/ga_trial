@@ -1,5 +1,5 @@
-from Individual import Individual
-from FitnessCalc import FitnessCalc
+from individual import Individual
+from fitnessCalc import FitnessCalc
 
 class Population():
 

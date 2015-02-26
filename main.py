@@ -1,6 +1,6 @@
-from FitnessCalc import FitnessCalc
-from Population import Population
-from Algorithm import Algorithm
+from fitnessCalc import FitnessCalc
+from population import Population
+from algorithm import Algorithm
 from time import time
 
 start = time()
@@ -13,7 +13,7 @@ generation_count = 0
 
 while my_pop.fitness_of_the_fittest() != FitnessCalc.get_max_fitness():
         generation_count += 1
-        print("Generation : %s Fittest : %s " % (generation_count, my_pop.fitness_of_the_fittest()))
+        print("Generation : %s\nFittest : %s " % (generation_count, my_pop.fitness_of_the_fittest()))
         my_pop = Algorithm.evolve_population(my_pop)
         print("******************************************************")
     
@@ -21,7 +21,7 @@ genes_the_fittest = []
 for i in range(len(FitnessCalc.Solution)):
     genes_the_fittest.append(my_pop.get_fittest().genes[i])
 
-print("Solution found !\nGeneration : %s Fittest : %s " % (generation_count + 1, my_pop.fitness_of_the_fittest()))
+print("Solution found !\nGeneration : %s\nFittest : %s " % (generation_count + 1, my_pop.fitness_of_the_fittest()))
 print("Genes of the Fittest : %s " % (genes_the_fittest))
 
 

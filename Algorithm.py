@@ -1,10 +1,10 @@
-from Population import Population
-from Individual import Individual
+from population import Population
+from individual import Individual
 from random import random, randint
 
 class Algorithm():
 
-    #Constants
+  #Constants
 	Uniform_rate = 0.5
 	Mutation_rate = 0.015
 	Tournament_size = 5
@@ -12,7 +12,7 @@ class Algorithm():
 
 	@staticmethod
 	def evolve_population(population_passed):
-	    print("Evolving population...")
+		print("Evolving population...")
 		new_population = Population(population_passed.size(), False)
 
 		if Algorithm.Elitism:
